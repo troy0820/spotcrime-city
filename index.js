@@ -13,7 +13,7 @@ server.connection({
 
 Promise.promisifyAll(geocode);
 
-server.route({
+server.route([{
   method: 'GET',
   path: '/{city}/{state}',
   handler: function(req, reply) {
@@ -31,7 +31,14 @@ server.route({
       })
     });
   }
-});
+},
+{
+  method:'GET',
+  path: '/',
+  handler: function(req, reply){
+    reply('Welcome to spotcrime-city');
+  }
+}]);
 
 server.start(function(err) {
   if (err) {
