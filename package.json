@@ -1,0 +1,24 @@
+{
+  "name": "crimestuff",
+  "version": "0.0.1",
+  "description": "SpotCrime wrapped in a Hapi server to hit endpoints with cities instead of lat/lngs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "crime",
+    "API",
+    "spotcrime"
+  ],
+  "author": "Troy M. Connor",
+  "repository": "http://github.com/troy0820/spotcrime-city",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "geocoder": "^0.2.2",
+    "hapi": "^13.2.1",
+    "spotcrime": "0.0.2"
+  }
+}
