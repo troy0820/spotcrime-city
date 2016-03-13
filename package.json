@@ -1,5 +1,5 @@
 {
-  "name": "crimestuff",
+  "name": "spotcrime-city",
   "version": "0.0.1",
   "description": "SpotCrime wrapped in a Hapi server to hit endpoints with cities instead of lat/lngs",
   "main": "index.js",
