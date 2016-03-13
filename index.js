@@ -16,19 +16,19 @@ Promise.promisifyAll(geocode);
 server.route([{
   method: 'GET',
   path: '/{city}/{state}',
-  handler: function(req, reply) {
+  handler (req, reply) {
   const city = req.params.city;
   const state = req.params.state;
   geocode.geocodeAsync(`${city}, ${state}`)
   .then(function(data) {
-  const loc = {
+    const loc = {
       lat: Number(data.results[0].geometry.location.lat),
       lon: Number(data.results[0].geometry.location.lng)
     };
     const radius = 0.07;
     spotcrime.getCrimes(loc, radius, function(err, crimes){
       reply(crimes);
-      })
+    });
     });
   }
 },
@@ -40,7 +40,7 @@ server.route([{
   }
 }]);
 
-server.start(function(err) {
+server.start((err) => {
   if (err) {
     throw err;
   }

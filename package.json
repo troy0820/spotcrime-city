@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint . --ext .js"
   },
   "keywords": [
     "crime",
@@ -20,5 +21,9 @@
     "geocoder": "^0.2.2",
     "hapi": "^13.2.1",
     "spotcrime": "0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0"
   }
 }
