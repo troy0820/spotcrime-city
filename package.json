@@ -1,6 +1,6 @@
 {
   "name": "spotcrime-city",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SpotCrime wrapped in a Hapi server to hit endpoints with cities instead of lat/lngs",
   "main": "index.js",
   "scripts": {
