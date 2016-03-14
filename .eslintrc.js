@@ -29,7 +29,7 @@ module.exports = {
     "no-else-return": 1,
     "no-const-assign": 0,
     "no-trailing-spaces": 2,
-    "no-unused-vars": [1, {
+    "no-unused-vars": [0, {
       "args": "none"
     }],
     "semi": 2,
