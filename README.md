@@ -5,8 +5,8 @@ This `demo` wraps that functionality in a [Hapi](http://hapijs.com)  server and 
 
 ##To see how it works
 
-```
-npm i spotcrime-city 
+```javascript
+npm i spotcrime-city
 npm start
 Go to localhost:8050/{city}/{State}
 e.g localhost:8050/Baltimore/MD
@@ -14,13 +14,12 @@ e.g localhost:8050/Baltimore/MD
 
 ##To use
 
-```
+```javascript
 const scc = require('spotcrime-city');
 
 const results = scc.getCrimesCity('Baltimore, MD');
 
 console.log(results, results);
-
 ```
 
 ####After you start the Hapi server, you can hit endpoints of city and state to see the local crime in your area.
