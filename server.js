@@ -1,7 +1,5 @@
 'use strict';
 
-const Promise = require('bluebird');
-const geocode = require('geocoder');
 const Hapi = require('hapi');
 const server = new Hapi.Server();
 const scc = require('./lib/spotcrimecity');
@@ -10,8 +8,6 @@ server.connection({
   host: 'localhost',
   port: '8050'
 });
-
-Promise.promisifyAll(geocode);
 
 server.route([{
   method: 'GET',
