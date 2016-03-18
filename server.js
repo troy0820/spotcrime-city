@@ -20,9 +20,9 @@ server.route([{
   }
 },
 {
-  method:'GET',
+  method: 'GET',
   path: '/',
-  handler: function(req, reply){
+  handler (req, reply) {
     reply('Welcome to spotcrime-city');
   }
 }]);
