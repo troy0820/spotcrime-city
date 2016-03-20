@@ -33,5 +33,3 @@ server.start((err) => {
   }
   console.log('=> Server is started on port 8050');
 });
-
-module.exports = server;
