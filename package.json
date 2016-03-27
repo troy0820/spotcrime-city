@@ -4,7 +4,7 @@
   "description": "SpotCrime wrapped in a Hapi server to hit endpoints with cities instead of lat/lngs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run lint; mocha tests/tests.js",
     "start": "node server.js",
     "lint": "eslint . --ext .js"
   },
