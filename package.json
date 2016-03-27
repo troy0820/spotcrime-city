@@ -23,8 +23,9 @@
     "spotcrime": "0.0.2"
   },
   "devDependencies": {
+    "assert": "^1.3.0",
     "eslint": "^2.4.0",
-    "eslint-config-airbnb": "^6.1.0",
-    "eslint-config-eta": "0.0.2"
+    "eslint-config-eta": "0.0.4",
+    "mocha": "^2.4.5"
   }
 }
