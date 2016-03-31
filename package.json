@@ -17,6 +17,7 @@
   "repository": "http://github.com/troy0820/spotcrime-city",
   "license": "MIT",
   "dependencies": {
+    "blipp": "^2.3.0",
     "bluebird": "^3.3.4",
     "geocoder": "^0.2.2",
     "hapi": "^13.2.1",
