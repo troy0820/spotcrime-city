@@ -13,7 +13,7 @@
     "API",
     "spotcrime"
   ],
-  "precommit": ["npm test"],
+  "precommit": ["test"],
   "author": "Troy M. Connor",
   "repository": "http://github.com/troy0820/spotcrime-city",
   "license": "MIT",
