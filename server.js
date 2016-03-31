@@ -3,6 +3,7 @@
 const Hapi = require('hapi');
 const server = new Hapi.Server();
 const scc = require('./lib/spotcrimecity');
+const Blipp = require('blipp');
 
 server.connection({
   host: 'localhost',
@@ -12,21 +13,28 @@ server.connection({
 server.route([{
   method: 'GET',
   path: '/{city}/{state}',
+  config: {
+  description: 'City State Route for SpotCrime City',
   handler (req, reply) {
   const city = req.params.city;
   const state = req.params.state;
   const crimes = scc.getCrimesCity(`${city}, ${state}`);
   reply(crimes);
+    }
   }
 },
 {
   method: 'GET',
   path: '/',
+  config: {
+  description: 'Welcome to SpotCrime City Route',
   handler (req, reply) {
     reply('Welcome to spotcrime-city');
   }
+}
 }]);
 
+server.register({ register: Blipp, options: {} });
 server.start((err) => {
   if (err) {
     throw err;
