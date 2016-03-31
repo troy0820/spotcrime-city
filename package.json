@@ -13,7 +13,9 @@
     "API",
     "spotcrime"
   ],
-  "precommit": ["test"],
+  "pre-commit": [
+    "test"
+  ],
   "author": "Troy M. Connor",
   "repository": "http://github.com/troy0820/spotcrime-city",
   "license": "MIT",
@@ -29,6 +31,6 @@
     "eslint": "^2.4.0",
     "eslint-config-eta": "0.0.4",
     "mocha": "^2.4.5",
-    "precommit": "^1.2.0"
+    "pre-commit": "^1.1.2",
   }
 }
