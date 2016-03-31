@@ -19,7 +19,7 @@ server.route([{
   const city = req.params.city;
   const state = req.params.state;
   const crimes = scc.getCrimesCity(`${city}, ${state}`);
-  reply(crimes);
+    reply(crimes);
     }
   }
 },
