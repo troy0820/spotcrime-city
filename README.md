@@ -25,3 +25,8 @@ console.log(results, results);
 ```
 
 ####After you start the Hapi server, you can hit endpoints of city and state to see the local crime in your area.
+
+
+#License
+
+###MIT Troy M. Connor
