@@ -19,9 +19,6 @@ server.route([{
   const city = req.params.city;
   const state = req.params.state;
   const crimes = scc.getCrimesCity(`${city}, ${state}`);
-    if (crimes._bitField === 0) {
-    reply('No crimes here');
-    }
     reply(crimes);
     }
   }
