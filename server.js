@@ -6,7 +6,7 @@ const scc = require('./lib/spotcrimecity');
 const Blipp = require('blipp');
 
 server.connection({
-  host: 'localhost',
+  host: '0.0.0.0',
   port: '8050'
 });
 
