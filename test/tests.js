@@ -11,8 +11,13 @@ lab.experiment('Set up tests', function() {
     done();
   });
 
-  lab.test('Check to see if object has function `getCrimesCity`', function(done) {
+  lab.test('Test to see if object has function `getCrimesCity`', function(done) {
     Code.expect(scc.getCrimesCity).to.be.a.function();
+    done();
+  });
+
+  lab.test('Test to see if object function is not an object', function(done) {
+    Code.expect(scc.getCrimesCity).to.not.be.an.object();
     done();
   });
 });
