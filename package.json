@@ -4,9 +4,10 @@
   "description": "SpotCrime wrapped in a Hapi server to hit endpoints with cities instead of lat/lngs",
   "main": "index.js",
   "scripts": {
-    "test": "npm run lint; mocha tests/tests.js",
+    "test": "lab -v -l -m 10000",
     "start": "node server.js",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+    "format": "esformatter -i 'test/**/*.js' 'lib/**/*.js'"
   },
   "keywords": [
     "crime",
@@ -14,6 +15,8 @@
     "spotcrime"
   ],
   "pre-commit": [
+    "lint",
+    "format",
     "test"
   ],
   "author": "Troy M. Connor",
@@ -27,10 +30,11 @@
     "spotcrime": "^0.0.4"
   },
   "devDependencies": {
-    "assert": "^1.3.0",
+    "code": "^3.0.1",
+    "esformatter": "^0.9.5",
     "eslint": "^2.4.0",
     "eslint-config-eta": "0.0.4",
-    "mocha": "^2.4.5",
+    "lab": "^10.8.2",
     "pre-commit": "^1.1.2"
   }
 }
