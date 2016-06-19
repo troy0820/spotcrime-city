@@ -4,6 +4,7 @@ const Hapi = require('hapi');
 const server = new Hapi.Server();
 const scc = require('./lib/spotcrimecity');
 const Blipp = require('blipp');
+const _ = require('lodash');
 
 server.connection({
   host: '0.0.0.0',
@@ -20,7 +21,7 @@ server.route([{
   const state = req.params.state;
   const crimes = scc.getCrimesCity(`${city}, ${state}`);
     reply(crimes);
-    }
+  }
   }
 },
 {
@@ -41,3 +42,5 @@ server.start((err) => {
   }
   console.log('=> Server is started on port 8050');
 });
+
+module.exports = server;

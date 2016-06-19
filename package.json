@@ -27,6 +27,7 @@
     "bluebird": "^3.3.4",
     "geocoder": "^0.2.2",
     "hapi": "^13.2.1",
+    "lodash": "^4.13.1",
     "spotcrime": "^0.0.4"
   },
   "devDependencies": {
