@@ -1,8 +1,6 @@
 #SpotCrime-city
 
-[![npm](https://img.shields.io/npm/v/spotcrime-city.svg?maxAge=2592000)](https://www.npmjs.com/package/spotcrime-city)
-
-[![Build Status](https://travis-ci.org/troy0820/spotcrime-city.svg?branch=master)](https://travis-ci.org/troy0820/spotcrime-city)
+[![npm](https://img.shields.io/npm/v/spotcrime-city.svg?maxAge=2592000)](https://www.npmjs.com/package/spotcrime-city)[![Build Status](https://travis-ci.org/troy0820/spotcrime-city.svg?branch=master)](https://travis-ci.org/troy0820/spotcrime-city)
 
 ####Currently the [spotcrime](https://github.com/contra/spotcrime) node module will allow you to fetch `JSON` of crimes in an area with latitude and longitude.
 This `demo` wraps that functionality in a [Hapi](http://hapijs.com)  server and retrieve the `JSON` with endpoints for city and state.
