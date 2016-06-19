@@ -4,7 +4,6 @@ const Hapi = require('hapi');
 const server = new Hapi.Server();
 const scc = require('./lib/spotcrimecity');
 const Blipp = require('blipp');
-const _ = require('lodash');
 
 server.connection({
   host: '0.0.0.0',
