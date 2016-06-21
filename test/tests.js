@@ -21,6 +21,11 @@ lab.experiment('Set up tests', function() {
     Code.expect(scc.getCrimesCity).to.not.be.an.object();
     done();
   });
+
+  lab.test('Test to make sure module is not a function but an object', function(done) {
+    Code.expect(scc).to.not.be.a.function();
+    done();
+  });
 });
 
 lab.experiment('Test to check functionality', function() {
