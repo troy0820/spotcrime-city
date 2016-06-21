@@ -26,7 +26,7 @@ const scc = require('spotcrime-city');
 
 const results = scc.getCrimesCity('Baltimore, MD');
 
-console.log(results, results);
+console.log('results', results);
 ```
 
 ####After you start the Hapi server, you can hit endpoints of city and state to see the local crime in your area.
