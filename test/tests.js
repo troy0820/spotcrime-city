@@ -52,13 +52,13 @@ lab.experiment('Test to check functionality', function() {
     done();
   });
 
-  lab.test('Check to see if any `${city}/${state}/` route fails', function(done) {
+  lab.test('Check to see if any `${city}/${state}/` route to return 200 (catchAll)', function(done) {
     const options = {
       method: 'GET',
       url: '/Baltimore/MD/'
     };
     server.inject(options, function(response) {
-      Code.expect(response.statusCode).to.equal(404);
+      Code.expect(response.statusCode).to.equal(200);
     });
     done();
   });

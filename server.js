@@ -30,6 +30,16 @@ server.route([{
   description: 'Welcome to SpotCrime City Route',
   handler (req, reply) {
     reply('Welcome to spotcrime-city');
+    }
+  }
+},
+{
+  method: 'GET',
+  path: '/{p*}',
+  config: {
+  description: 'Catch all route',
+  handler (req, reply) {
+    reply('Sorry........ You have reached the wrong page');
   }
 }
 }]);
