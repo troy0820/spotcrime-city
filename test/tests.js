@@ -62,4 +62,15 @@ lab.experiment('Test to check functionality', function() {
     });
     done();
   });
+
+  lab.test('Check to see if any route falls into the catchAll route', function(done) {
+    const options = {
+      method: 'GET',
+      url: '/afdfaf/afdfafd/afdfa/dfaf/afdaf/adfaf'
+    };
+    server.inject(options, function(res) {
+      Code.expect(res.statusCode).to.equal(200);
+    });
+    done();
+  });
 });
