@@ -30,6 +30,9 @@
     "lodash": "^4.13.1",
     "spotcrime": "^0.0.4"
   },
+  "engines": {
+    "node": "4.4"
+  },
   "devDependencies": {
     "code": "^3.0.1",
     "esformatter": "^0.9.5",
