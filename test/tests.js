@@ -28,7 +28,7 @@ lab.experiment('Set up tests', function() {
   });
 });
 
-lab.experiment('Test to check functionality', function() {
+lab.experiment('Test to check server functionality', function() {
   lab.test('Check to see if `/` route passes', function(done) {
     const options = {
       method: 'GET',
@@ -73,4 +73,12 @@ lab.experiment('Test to check functionality', function() {
     });
     done();
   });
+});
+
+  lab.experiment('Check the function functionality', function() {
+    lab.test('Check to see if object returns from function', function(done) {
+      const results = scc.getCrimesCity('Baltimore, MD');
+      Code.expect(results).to.be.a.object();
+      done();
+    });
 });
