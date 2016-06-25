@@ -75,10 +75,10 @@ lab.experiment('Test to check server functionality', function() {
   });
 });
 
-  lab.experiment('Check the function functionality', function() {
-    lab.test('Check to see if object returns from function', function(done) {
-      const results = scc.getCrimesCity('Baltimore, MD');
-      Code.expect(results).to.be.a.object();
-      done();
-    });
+lab.experiment('Check the function functionality', function() {
+  lab.test('Check to see if object returns from function', function(done) {
+    const results = scc.getCrimesCity('Baltimore, MD');
+    Code.expect(results).to.be.a.object();
+    done();
+  });
 });
