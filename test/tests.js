@@ -29,7 +29,7 @@ lab.experiment('Set up tests', function() {
 });
 
 lab.experiment('Test to check server functionality', function() {
-  lab.test('Check to see if `/` route passes', function(done) {
+  lab.test('Test to see if `/` route passes', function(done) {
     const options = {
       method: 'GET',
       url: '/'
@@ -41,7 +41,7 @@ lab.experiment('Test to check server functionality', function() {
     done();
   });
 
-  lab.test('Check to see if any other route passes', function(done) {
+  lab.test('Test to see if any other route passes', function(done) {
     const options = {
       method: 'GET',
       url: '/Baltimore/MD'
@@ -52,7 +52,7 @@ lab.experiment('Test to check server functionality', function() {
     done();
   });
 
-  lab.test('Check to see if any `${city}/${state}/` route to return 200 (catchAll)', function(done) {
+  lab.test('Test to see if any `${city}/${state}/` route to return 200 (catchAll)', function(done) {
     const options = {
       method: 'GET',
       url: '/Baltimore/MD/'
@@ -63,7 +63,7 @@ lab.experiment('Test to check server functionality', function() {
     done();
   });
 
-  lab.test('Check to see if any route falls into the catchAll route', function(done) {
+  lab.test('Test to see if any route falls into the catchAll route', function(done) {
     const options = {
       method: 'GET',
       url: '/afdfaf/afdfafd/afdfa/dfaf/afdaf/adfaf'
@@ -75,8 +75,8 @@ lab.experiment('Test to check server functionality', function() {
   });
 });
 
-lab.experiment('Check the function functionality', function() {
-  lab.test('Check to see if object returns from function', function(done) {
+lab.experiment('Test the function functionality', function() {
+  lab.test('Test to see if object returns from function', function(done) {
     const results = scc.getCrimesCity('Baltimore, MD');
     Code.expect(results).to.be.a.object();
     done();
