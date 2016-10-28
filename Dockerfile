@@ -1,10 +1,15 @@
 FROM node:4.4.7
 
-COPY . /var/www
+
+ADD package.json /tmp/package.json
+
+RUN cd /tmp/ && npm install
+
+RUN mkdir -p /var/www && cp -a /tmp/node_modules /var/www
 
 WORKDIR /var/www
 
-RUN npm install
+ADD . /var/www
 
 EXPOSE 8050
 
