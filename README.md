@@ -16,8 +16,7 @@ e.g localhost:8050/Baltimore/MD
 ##You can also run this in a Docker container
 
 ```bash
-docker build -t spotcrime-city .
-docker run -p 8050:8050 -e PORT=8050 spotcrime-city
+docker-compose up
 ```
 
 ##To use
