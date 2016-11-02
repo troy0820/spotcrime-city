@@ -2,6 +2,7 @@ version: '2'
 
 services:
   api:
+    container_name: spotcrime_api
     build: .
     ports:
       - '8050:8050'
